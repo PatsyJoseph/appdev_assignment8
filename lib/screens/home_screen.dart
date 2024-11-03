@@ -15,8 +15,13 @@ class HomScreen extends StatelessWidget {
         children: [
           Text("This is supposed to be a Home Screen"),
           SizedBox(height: 20),
-          
           // INSERT CODE BELOW
+           ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/about_me');
+            },
+            child: Text("Go to About Me"),
+           )
         ],
       ),
     );

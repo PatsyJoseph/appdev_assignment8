@@ -1,5 +1,5 @@
-import 'package:assignment_demo/screens/about_me.dart';
-import 'package:assignment_demo/screens/home_screen.dart';
+import 'package:assignment_8/screens/about_me.dart';
+import 'package:assignment_8/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +18,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       // Create the routes here
+      routes: {
+        '/': (context) => HomScreen(),
+        '/about_me': (context) => About_Me(),
+      },
+      initialRoute: '/',
     );
   }
 }
