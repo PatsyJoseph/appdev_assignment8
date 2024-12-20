@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
       ),
       // Create the routes here
       routes: {
-        '/': (context) => HomScreen(),
+        '/home': (context) => HomScreen(),
         '/about_me': (context) => About_Me() // Corrected typo: HomScreen() -> HomeScreen()
       },
-      initialRoute: '/',
+      initialRoute: '/home',
     );
   }
 }
